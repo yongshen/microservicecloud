@@ -12,7 +12,7 @@ eureka:
 
 turbine:
   app-config: MICROSERVICECLOUD-DEPT
-  cluster-name-expression: "microservicecloud-dept"
+  cluster-name-expression: new String("default")
   combine-host-port: true
 
 
