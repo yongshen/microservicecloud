@@ -21,6 +21,8 @@ import com.atguigu.springcloud.entities.Dept;
  * @date 2018年4月21日
  */
 //@FeignClient(value = "MICROSERVICECLOUD-DEPT")
+
+//这里服务名不区分大小写
 @FeignClient(value = "MICROSERVICECLOUD-DEPT",fallbackFactory=DeptClientServiceFallbackFactory.class)
 public interface DeptClientService
 {
